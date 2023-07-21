@@ -1,0 +1,97 @@
+.maindiv{
+    border: 3px solid;
+    border-color: aliceblue;
+    border-radius: 5px;
+    width: 35rem;
+    box-shadow: rgb(236, 225, 225) 3px 3px 3px 3px;  
+    margin-top: 20px;
+}
+.ownForm{
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    justify-content: center;
+    width: 30rem;
+}
+.ownForm label{
+    margin-top: 10px;
+    text-align: start;
+    color: aliceblue;
+}
+.ownForm input{
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 3px solid;
+    border-radius: 3px;
+}
+.ownForm input:hover{
+    border-color: rgb(0, 115, 255);
+}
+.ownForm #submit{
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    align-items: center;
+    float: right;
+    border: 2px solid;
+    margin-top: 10px;
+    color: white;
+    border-color: rgb(0, 115, 255);
+    border-radius: 5px;
+}
+.ownForm #submit:hover{
+    background-color: rgba(92, 168, 234, 0.788);
+}
+
+.ownForm option:hover{
+    border-color: rgb(0, 115, 255);
+}
+.ownForm textarea:hover{
+    border-color: rgb(0, 115, 255);
+}
+/* .reactForm{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.reactForm form{
+    display: flex;
+    flex-direction: column;
+    width: 40rem; 
+}
+.reactForm input{
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 3px solid;
+    border-color: rgb(0, 115, 255);
+    border-radius: 3px;
+    box-shadow: 2px white;
+}
+.reactForm select{
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 3px solid;
+    border-color: rgb(0, 115, 255);
+    border-radius: 3px;
+    
+}
+.reactForm .msg{
+    min-height: 100px;
+    max-height: fit-content;
+}
+.reactForm .submit{
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    align-items: center;
+    float: right;
+}
+.reactForm .showBlock{
+    display: block;
+}
+.reactForm .hideBlock{
+    display: none;
+} */

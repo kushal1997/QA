@@ -1,10 +1,14 @@
 import React, { useState } from 'react'
 import { useTitle } from '../../components/hooks/useTitle';
 import $ from "jquery";
+
 import { ReactForm } from '../other/ReactForm';
 
 import Q1_1 from "../../assets/Informatica/Q1.jpg"
 import Q1_2 from "../../assets/Informatica/Q1_1.png"
+
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 export const Ques = () => {
   const [isHide, setHide] = useState(false);
@@ -26,9 +30,9 @@ export const Ques = () => {
     });
   });
 
-  window.addEventListener('contextmenu',(e)=>{
+  window.addEventListener('contextmenu', (e) => {
     e.preventDefault();
-  },false);
+  }, false);
   //  Question one
   const [activeWindbox1, setActiveWindbox1] = useState(false);
   const [arrow1, setArrow1] = useState(false);
@@ -116,14 +120,17 @@ export const Ques = () => {
     setActiveWindbox10(!activeWindbox10);
     setArrow10(!arrow10);
   }
-  
+
+
+
+
   return (
     <div className=" mt-[2px] p-1 w-[76.5rem] float-right rounded-md  ">
       <div className="p-1 bg-white dark:bg-[#030321]">
 
         <main className=" p-3  bg-[#030321]">
           <h1 className="  text-3xl font-semibol lg:text-4xl text-white">
-          SQL Questions
+            SQL Questions
           </h1>
 
           {/* Prev & Next Buttons */}
@@ -176,11 +183,16 @@ export const Ques = () => {
                   <div className={activeWindbox1 ? 'show' : 'hidden'}>
                     <div className='flex flex-col items-center'>
                       <p className="mt-6 text-sm text-zinc-200 dark:text-gray-300 text-justify indent-12">
-                      <pre><code class="">DELETE E.* FROM EMP E WHERE ROWID NOT IN
-(SELECT MAX(ROWID) FROM EMP GROUP BY DEPTNO)
-</code></pre>
+
                       </p>
-                      <img width={500} height={500} src={Q1_1} alt="react_image" ></img>
+                      <SyntaxHighlighter language="sql" style={atomOneDark}>
+                        {'SELECT * FROM (SELECT E.*,ROWNUM RNO FROM EMP E) WHERE MOD(RNO,2)=1;'}
+                      </SyntaxHighlighter>
+
+                      <SyntaxHighlighter language="sql" style={atomOneDark}>
+                        {"SELECT LENGTH(ENAME)-LENGTH(REPLACE(ENAME,'A','')) A_COUNT FROM EMP;"}
+                      </SyntaxHighlighter>
+                      {/* <img width={500} height={500} src={Q1_1} alt="react_image" ></img> */}
                       <p className="mt-6 text-sm text-zinc-200 dark:text-gray-300 text-justify indent-12">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
                         eaque nobis, fugit odit omnis fugiat deleniti animi ab maxime cum
@@ -341,7 +353,7 @@ export const Ques = () => {
                           </span>
                         </div>
                       </button>
-                      
+
                     </div>
                   </div>
                 </div>

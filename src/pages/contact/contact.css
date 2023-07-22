@@ -1,0 +1,98 @@
+body{
+    text-align: center;
+    background-color: black;
+    justify-content: center;
+    
+}
+.contact{
+   
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 350px;
+
+}
+input{
+    color: black;
+}
+.h-contact{
+    font-size: xx-large;
+    
+}
+.p-contact{
+    color: white;
+}
+.col input{
+    background-color:aquamarine;
+    padding: 18px 15px 18px;
+    text-align: center;
+}
+.message{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+.mail{
+    outline-style: groove;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-right: 12px;    
+}
+.phone{
+    outline-style: groove;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.mail img{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.phone img{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 40px;
+    
+}
+
+.container{
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    max-width: 35rem;
+    color: white;
+    /* border: 5px solid;
+    border-radius: 7px; */
+}
+label{
+    text-align: left;
+    padding: 0.05rem 0;
+    margin-top: 7px;
+}
+input{
+    display: flex;
+    flex-direction: column;
+    margin: 0.05rem 0;
+    padding: 1rem;
+    border: none;
+    min-width: 25rem;
+    margin-top: 3px;
+    border-radius: 10px;
+}
+button{
+    border: 1px solid;
+    padding: 10px;
+    
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;    
+  }
+  .address{
+ width: 300px;
+  }
+/*  */

@@ -9,6 +9,7 @@ import { ReactForm } from '../other/ReactForm';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
+import "../../media_screen/media_ques.css"
 export const Dwh = () => {
   useTitle(`Informatica DWH`);
   $(document).ready(function () {
@@ -124,7 +125,7 @@ export const Dwh = () => {
 
   const codeString = '(num) => num + 1';
   return (
-    <div className=" mt-[2px] p-1 w-[76.5rem] float-right rounded-md  ">
+    <div className="questions mt-[2px] p-1 float-right rounded-md  ">
       <div className="p-1 bg-white dark:bg-[#030321]">
 
         <main className=" p-3  bg-[#030321]">
@@ -142,7 +143,7 @@ export const Dwh = () => {
               }}
               className='flex justify-evenly text-center border-solid border-4 border-blue-700 rounded-lg  hover:bg-slate-200'
             >
-              <img width="40" height="40" src="https://img.icons8.com/fluency/48/back.png" alt="back" />
+              <img className='next_prev_img' src="https://img.icons8.com/fluency/48/back.png" alt="back" />
               <p className=' text-blue-600 self-center p-2'>Previous Page</p>
             </button>
             <button
@@ -154,7 +155,7 @@ export const Dwh = () => {
               className=' ml-3 flex justify-evenly text-centerborder-solid border-4 border-blue-700 rounded-lg  hover:bg-slate-200'
             >
               <p className=' text-blue-600 self-center p-2'>Next Page</p>
-              <img width="40" height="40" src="https://img.icons8.com/fluency/48/forward.png" alt="forward" />
+              <img className='next_prev_img' src="https://img.icons8.com/fluency/48/forward.png" alt="forward" />
             </button>
           </div>
 
@@ -1593,7 +1594,7 @@ export const Dwh = () => {
           </div>
 
 
-          <div className='flex flex-row justify-between h-[60px]'>
+          <div className='footer '>
             <div className='flex justify-start mt-2'>
               <button onClick={() => setHide(e => !e)}
                 className=" text-xl text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2">
@@ -1611,7 +1612,7 @@ export const Dwh = () => {
                 }}
                 className='flex justify-evenly text-center border-solid border-4 border-blue-700 rounded-lg  hover:bg-slate-200'
               >
-                <img width="40" height="40" src="https://img.icons8.com/fluency/48/back.png" alt="back" />
+                <img className='next_prev_img' src="https://img.icons8.com/fluency/48/back.png" alt="back" />
                 <p className=' text-blue-600 self-center p-2'>Previous Page</p>
               </button>
               <button
@@ -1623,7 +1624,7 @@ export const Dwh = () => {
                 className=' ml-3 flex justify-evenly text-centerborder-solid border-4 border-blue-700 rounded-lg  hover:bg-slate-200'
               >
                 <p className=' text-blue-600 self-center p-2'>Next Page</p>
-                <img width="40" height="40" src="https://img.icons8.com/fluency/48/forward.png" alt="forward" />
+                <img className='next_prev_img' src="https://img.icons8.com/fluency/48/forward.png" alt="forward" />
               </button>
             </div>
           </div>

@@ -8,6 +8,7 @@ import {Dwh,InforQuestions,ScenarioBasedQues} from "../pages/informatica"
 import { PlSql, QuerryQue, Ques } from '../pages/oracle';
 import { ReactForm } from '../pages/other/ReactForm';
 import { HomePage } from '../pages/HomePage';
+import { Contact } from '../pages/contact/Contact';
 
 
 
@@ -42,7 +43,7 @@ export const AllRoutes = () => {
       
 
 
-      <Route></Route>
+      <Route path='/contact_page' Component={Contact}></Route>
 
       <Route path='under_maintenance' Component={UnderConsruction}></Route>
 

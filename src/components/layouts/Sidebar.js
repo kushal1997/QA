@@ -31,7 +31,7 @@ export const Sidebar = () => {
 
     }
 
-    const activeClass = " text-lg block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white ";
+    const activeClass = " text-lg block py-2 pr-4 pl-3 text-white  rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white ";
     
     return (
         <div className=' bg-gray-900 '>
@@ -80,17 +80,17 @@ export const Sidebar = () => {
                             id="subReactMenu"
                         >
                             <NavLink to="/informatica/dwh" className={({ isActive }) => isActive ? activeClass : ''}>
-                                <h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">
+                                <h1 className="cursor-pointer p-2 hover:bg-blue-600 hover:text-white rounded-md mt-1">
                                     DWH
                                 </h1>
                             </NavLink>
                             <NavLink to="/informatica/questions" className={({ isActive }) => isActive ? activeClass : ''}>
-                                <h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">
+                                <h1 className="cursor-pointer p-2 hover:bg-blue-600 hover:text-white rounded-md mt-1">
                                     Infom. Questions
                                 </h1>
                             </NavLink>
                             <NavLink to="/informatica/scenario_based_ques" className={({ isActive }) => isActive ? activeClass : ''}>
-                                <h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">
+                                <h1 className="cursor-pointer p-2 hover:bg-blue-600 hover:text-white rounded-md mt-1">
                                     Scenario Based Que.
                                 </h1>
                             </NavLink>
@@ -108,7 +108,7 @@ export const Sidebar = () => {
                             <span className="text-[15px] ml-4 text-gray-200 font-bold">
                                 Oracle
                             </span>
-                            <div className={oracleRotated ? 'rotate-0' : 'rotate-180'}>
+                            <div className={oracleRotated ? 'rotate-180' : 'rotate-0'}>
                                 <span className="text-sm " id="arrow">
                                     <i className="bi bi-chevron-down" />
                                 </span>
@@ -121,14 +121,14 @@ export const Sidebar = () => {
                             id="subReactMenu"
                         >
                             <NavLink to="/oracle/questions" className={({ isActive }) => isActive ? activeClass : ''}>
-                                <h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">
+                                <h1 className="cursor-pointer p-2 hover:bg-blue-600 hover:text-white rounded-md mt-1">
                                     Questions
 
                                 </h1>
                             </NavLink>
 
                             <NavLink to="/oracle/query_questions" className={({ isActive }) => isActive ? activeClass : ''}>
-                                <h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">
+                                <h1 className="cursor-pointer p-2 hover:bg-blue-600 hover:text-white rounded-md mt-1">
                                     Query Based Que.
 
                                 </h1>
@@ -136,7 +136,7 @@ export const Sidebar = () => {
 
                             <NavLink to="/oracle/programming_sql" className={({ isActive }) => isActive ? activeClass : ''}>
 
-                                <h1 className="cursor-pointer p-2 hover:bg-blue-600 rounded-md mt-1">
+                                <h1 className="cursor-pointer p-2 hover:bg-blue-600 hover:text-white rounded-md mt-1">
                                     PL/SQL
                                 </h1>
                             </NavLink>

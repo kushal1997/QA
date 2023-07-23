@@ -6,7 +6,7 @@ import Q1_1 from "../../assets/Informatica/Q1.jpg"
 import Q1_2 from "../../assets/Informatica/Q1_1.png"
 
 export const QuerryQue = () => {
-   const [isHide, setHide] = useState(false);
+  const [isHide, setHide] = useState(false);
   useTitle(`Query Questions`);
   $(document).ready(function () {
     var divs = $('.mydivs>div');
@@ -24,10 +24,13 @@ export const QuerryQue = () => {
       //console.log(divs.length, now);
     });
   });
-
-  window.addEventListener('contextmenu',(e)=>{
+  const handleHide = () => {
+    setHide(e => !e);
+    alert("Scroll Down To Fill Up Feedback Form");
+  }
+  window.addEventListener('contextmenu', (e) => {
     e.preventDefault();
-  },false);
+  }, false);
 
   //  Question one
   const [activeWindbox1, setActiveWindbox1] = useState(false);
@@ -116,14 +119,14 @@ export const QuerryQue = () => {
     setActiveWindbox10(!activeWindbox10);
     setArrow10(!arrow10);
   }
- 
+
   return (
-    <div className="questions mt-[2px] p-1 float-right rounded-md  ">
-      <div className="p-1 bg-white dark:bg-[#030321]">
+    <div className="questions mt-1 float-right rounded-md  ">
+      <div className=" bg-white dark:bg-[#030321]">
 
         <main className=" p-3  bg-[#030321]">
           <h1 className="  text-3xl font-semibol lg:text-4xl text-white">
-          Query Based Questions
+            Query Based Questions
           </h1>
 
           {/* Prev & Next Buttons */}
@@ -342,7 +345,7 @@ export const QuerryQue = () => {
                           </span>
                         </div>
                       </button>
-                      
+
                     </div>
                   </div>
                 </div>
@@ -1586,7 +1589,7 @@ export const QuerryQue = () => {
 
           <div className='footer '>
             <div className='flex justify-start mt-2'>
-              <button onClick={() => setHide(e => !e)}
+              <button onClick={handleHide}
                 className=" text-xl text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2">
                 <b>Please Give Feedback</b>
               </button>

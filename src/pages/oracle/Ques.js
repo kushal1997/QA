@@ -29,7 +29,10 @@ export const Ques = () => {
       //console.log(divs.length, now);
     });
   });
-
+  const handleHide=() => {
+    setHide(e => !e);
+    alert("Scroll Down To Fill Up Feedback Form");
+  }
   window.addEventListener('contextmenu', (e) => {
     e.preventDefault();
   }, false);
@@ -125,8 +128,8 @@ export const Ques = () => {
 
 
   return (
-    <div className="questions mt-[2px] p-1 float-right rounded-md  ">
-      <div className="p-1 bg-white dark:bg-[#030321]">
+    <div className="questions mt-1 float-right rounded-md  ">
+      <div className=" bg-white dark:bg-[#030321]">
 
         <main className=" p-3  bg-[#030321]">
           <h1 className="  text-3xl font-semibol lg:text-4xl text-white">
@@ -1597,7 +1600,7 @@ export const Ques = () => {
 
           <div className='footer '>
             <div className='flex justify-start mt-2'>
-              <button onClick={() => setHide(e => !e)}
+              <button onClick={handleHide}
                 className=" text-xl text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2">
                 <b>Please Give Feedback</b>
               </button>

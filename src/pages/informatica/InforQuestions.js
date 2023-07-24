@@ -134,7 +134,7 @@ export const InforQuestions = () => {
           </h1>
 
           {/* Prev & Next Buttons */}
-          <div className='flex justify-end mt-2'>
+          <div className='arrow_button'>
             <button
               type="button"
               name="prev"
@@ -1600,7 +1600,7 @@ export const InforQuestions = () => {
 
             </div>
             {/* Prev & Next Buttons */}
-            <div className='flex justify-end mt-2'>
+            <div className='arrow_button'>
               <button
                 type="button"
                 name="prev"

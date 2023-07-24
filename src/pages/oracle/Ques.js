@@ -137,7 +137,7 @@ export const Ques = () => {
           </h1>
 
           {/* Prev & Next Buttons */}
-          <div className='flex justify-end mt-2'>
+          <div className='arrow_button'>
             <button
               type="button"
               name="prev"
@@ -1607,7 +1607,7 @@ export const Ques = () => {
 
             </div>
             {/* Prev & Next Buttons */}
-            <div className='flex justify-end mt-2'>
+            <div className='arrow_button'>
               <button
                 type="button"
                 name="prev"

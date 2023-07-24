@@ -133,7 +133,7 @@ export const ScenarioBasedQues = () => {
           </h1>
 
           {/* Prev & Next Buttons */}
-          <div className='flex justify-end mt-2'>
+          <div className='arrow_button'>
             <button
               type="button"
               name="prev"
@@ -1599,7 +1599,7 @@ export const ScenarioBasedQues = () => {
 
             </div>
             {/* Prev & Next Buttons */}
-            <div className='flex justify-end mt-2'>
+            <div className='arrow_button'>
               <button
                 type="button"
                 name="prev"

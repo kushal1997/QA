@@ -57,10 +57,6 @@ export const ReactForm = () => {
     return (
 
         <>
-
-
-
-
             <div className='maindiv'>
                 {!showConfirmation ? (
                     <div>
@@ -68,6 +64,7 @@ export const ReactForm = () => {
                         <form onSubmit={formik.handleSubmit} className='ownForm'>
                             <label htmlFor='from_name'>Name</label>
                             <input
+                                className='form_input'
                                 type="text"
                                 name="from_name"
                                 placeholder='Your Name'
@@ -79,6 +76,7 @@ export const ReactForm = () => {
 
                             <label htmlFor='from_email'>Email</label>
                             <input
+                                className='form_input'
                                 type="email"
                                 name="from_email"
                                 onChange={formik.handleChange}
@@ -87,11 +85,12 @@ export const ReactForm = () => {
                             />
                             {formik.touched.from_email && formik.errors.from_email && <div className=' text-red-500 font-semibold text-left'>{formik.errors.from_email}</div>}
 
-                            <div className='flex flex-row'>
-                                <div className='flex flex-col'>
+                            <div className='form_row'>
+                                <div className='form_topic'>
                                     <label htmlFor='topic_name'>Topic</label>
                                     <select
                                         name='topic_name'
+                                        className='form_input'
                                         value={formik.values.topic_name}
                                         onChange={(e) => { setSelectedTopic(e.target.value) }}
                                     >
@@ -105,11 +104,12 @@ export const ReactForm = () => {
                                         }
                                     </select>
                                 </div>
-                                <div className='flex flex-col ml-5'>
+                                <div className='form_sub_topic'>
                                     <label htmlFor='sub_name'>Sub Topic</label>
 
                                     {selectedTopic &&
                                         <select
+                                            className='form_input'
                                             name="sub_name"
                                             onChange={formik.handleChange}
                                             onBlur={formik.handleBlur}
@@ -123,10 +123,10 @@ export const ReactForm = () => {
                                         </select>}
 
                                 </div>
-                                <div className='flex flex-col ml-5'>
+                                <div className='form_qn'>
                                     <label htmlFor='que_num'>Que Num</label>
                                     <input
-                                        className=' h-[23px] mt-0 w-[100px]'
+                                        className='form_input h-[23px] mt-0 w-[100px]'
                                         type="number"
                                         name="que_num"
                                         onChange={formik.handleChange}
@@ -139,7 +139,7 @@ export const ReactForm = () => {
 
                             <label htmlFor='message'>Message</label>
                             <textarea
-                                className=' indent-2 max-h-fit min-h-[10rem]'
+                                className='form_input indent-2 max-h-fit min-h-[10rem]'
                                 type="text"
                                 name="message"
                                 onChange={formik.handleChange}

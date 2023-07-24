@@ -130,7 +130,7 @@ export const QuerryQue = () => {
           </h1>
 
           {/* Prev & Next Buttons */}
-          <div className='flex justify-end mt-2'>
+          <div className='arrow_button'>
             <button
               type="button"
               name="prev"
@@ -1596,7 +1596,7 @@ export const QuerryQue = () => {
 
             </div>
             {/* Prev & Next Buttons */}
-            <div className='flex justify-end mt-2'>
+            <div className='arrow_button'>
               <button
                 type="button"
                 name="prev"

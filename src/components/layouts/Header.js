@@ -44,24 +44,25 @@ const Header = () => {
         </div>
         <nav className="site-navigation">
           <ul className="nav">
-            <li>
+            <li className='user'>
               <Link to='/contact_page'>
                 <img width="40" height="40" src="https://img.icons8.com/external-anggara-filled-outline-anggara-putra/32/external-contact-home-screen-anggara-filled-outline-anggara-putra-2.png" alt="external-contact-home-screen-anggara-filled-outline-anggara-putra-2" />
               </Link>
             </li>
-            <li>
-              <a target='_blank' href='https://www.facebook.com/dayaconsultancyservicespvt.ltd/'>
-                <img width="40" height="40" src="https://img.icons8.com/color/48/facebook.png" alt="facebook" />
-              </a>
-              {/* <a href="#">About</a> */}
-            </li>
-            <li>
-              <a target='_blank' href='https://twitter.com/i/flow/login?redirect_after_login=%2FDayaservices'>
-                <img width="40" height="40" src="https://img.icons8.com/color/48/twitter--v1.png" alt="twitter--v1" />
-              </a>
-              {/* <img src={gif1} ></img> */}
-            </li>
-
+            <div className='fb-tw'>
+              <li>
+                <a target='_blank' href='https://www.facebook.com/dayaconsultancyservicespvt.ltd/'>
+                  <img width="40" height="40" src="https://img.icons8.com/color/48/facebook.png" alt="facebook" />
+                </a>
+                {/* <a href="#">About</a> */}
+              </li>
+              <li>
+                <a target='_blank' href='https://twitter.com/i/flow/login?redirect_after_login=%2FDayaservices'>
+                  <img width="40" height="40" src="https://img.icons8.com/color/48/twitter--v1.png" alt="twitter--v1" />
+                </a>
+                {/* <img src={gif1} ></img> */}
+              </li>
+            </div>
 
 
           </ul>

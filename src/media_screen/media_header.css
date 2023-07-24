@@ -1,0 +1,76 @@
+@media screen and (max-width: 600px) {
+    .site{
+      display: none;
+    }
+    .site-identity h1{
+      font-size: x-large;
+      margin-left: 110px;
+    }
+    .fb-tw{
+      display: none;
+      
+    }
+    .user{
+      height: 30px;
+      width: 30px;
+      margin: 0px;
+    
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width: 768px) {
+   
+    .site{
+      margin-left: -60px;
+      
+    }
+    .site-identity h1{
+      font-size: 33px;
+      margin-left: -40px;
+    }
+    
+    .fb-tw{
+      display: none;
+      
+    }
+    .user{
+      height: 30px;
+      width: 30px;
+      margin: 0px;
+    
+    }
+       
+     }
+  
+
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .site{
+      margin-left: -60px;
+      
+    }
+    .site-identity h1{
+      font-size: 28px;
+      margin-left: 0px;
+    }
+    
+     .site-navigation img{
+     height: 28px;
+     width:28px
+       
+     }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1123px) {
+    .site{
+      margin-left: -60px;
+      
+    }
+    .site-identity h1{
+      font-size: 40px;
+      margin-left: 0px;
+    }
+    
+     .site-navigation img{
+     height: 28px;
+     width:28px
+       
+     }
+  }
